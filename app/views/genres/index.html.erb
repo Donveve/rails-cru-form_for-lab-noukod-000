@@ -1,6 +1,3 @@
-<%= form_for(@genre) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br />
-  <br />
-  <%= f.submit %>
+<% @songs.each do |song| %>
+  <p> <%= song.name %></p>
 <% end %>
